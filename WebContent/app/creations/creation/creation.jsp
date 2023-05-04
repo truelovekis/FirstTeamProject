@@ -73,11 +73,10 @@
 						<div class="creations-main-content">
 							<c:forEach var="creationFile" items="${creation.getFiles()}">
 							<c:set var="name" value="${creationFile.getFileSystemName() }"/>
-							<c:if test="${not fn:contains(name , '.ttf')} ">
+							<c:if test="${not fn:contains(name , '.ttf')}">
 								<img
 									src="${pageContext.request.contextPath}/upload/${creationFile.getFileSystemName()}">
 							</c:if>
-								
 								<div class="download-btn-wrap">
 									<div class="theme-down-box">
 										<div class="folder-icon">
